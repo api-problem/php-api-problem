@@ -15,7 +15,7 @@ For now, this is accomplished via a static `ValueBuilderInterface` that you may 
 ## ValueBuilders
 
 The `ApiProblemException` constructor will pass `$this` into `ValueBuilderInterface::build()` where you can manipulate
-`ApiProblemException` instance however you like.
+`ApiProblemException` however you like.
 
 ### BasicValueBuilder (Default)
 
@@ -48,7 +48,7 @@ Will output...
 ### TypeUrlBuilder
 
 This builder generates a custom `type` (which must be a URL per the RFC) by appending the `status` to the end of
-a give base URL.
+a given base URL.
 
 **Example:**
 
@@ -90,7 +90,7 @@ If you do not set a `baseTypeUrl`, the default is https://en.wikipedia.org/wiki/
 
 ### Custom Value Builders
 
-You may create your own value builder by implementing `ValueBuilderInterface`. You may want to also optionally extend
+You may create your own value builder by implementing `ValueBuilderInterface`. Optionally, you may also want to extend
 one of the built-in builders.
 
 **Example:**
